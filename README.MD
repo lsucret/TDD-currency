@@ -7,3 +7,5 @@
 - [ ] amount를 private으로 만들기
 - [x] Dollar의 부작용
 - [ ] Money의 반올림 
+- [x] equals()
+- [ ] hasCode()
