@@ -13,5 +13,6 @@
 - [ ] Equal object 를 대처
 - [x] 5CHF * 2 = 10 CHF -> 다른 화폐 적용
 - [x] 공용 equals
-- [ ] 공용 times
+- [x] 공용 times
+- [ ] 통화 구현
 - [x] Franc 와 Dollar 비교하기
