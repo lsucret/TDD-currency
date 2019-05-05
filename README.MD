@@ -11,3 +11,4 @@
 - [ ] hasCode()
 - [ ] Equal null 을 대처
 - [ ] Equal object 를 대처
+- [x] 5CHF * 2 = 10 CHF -> 다른 화폐 적용
