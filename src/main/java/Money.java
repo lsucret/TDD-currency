@@ -20,6 +20,7 @@ public class Money {
     };
 
     String currency(){
+        System.out.println("Money 안 오버라이딩 : "+currency);
         return currency;
     }
 
