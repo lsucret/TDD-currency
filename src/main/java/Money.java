@@ -14,13 +14,12 @@ public class Money {
     static Franc franc(int amount) {
         return new Franc(amount, "CHF");
     }
-
+    
     Money times(int multiplier){
-        return null;
-    };
+        return new Money(amount * multiplier,currency);
+    }
 
     String currency(){
-        System.out.println("Money 안 오버라이딩 : "+currency);
         return currency;
     }
 
