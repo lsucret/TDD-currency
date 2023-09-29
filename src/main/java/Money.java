@@ -1,4 +1,4 @@
-public class Money {
+public class Money implements Expression {
     protected int amount;
     protected String currency;
 
@@ -33,5 +33,8 @@ public class Money {
         return money.amount == this.amount && currency().equals(money.currency());
     }
 
+    public Money plus(Money addend) {
+        return new Money(amount + addend.amount, currency);
+    }
 
 }
