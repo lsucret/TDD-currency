@@ -16,4 +16,4 @@
 - [x] 공용 times
 - [x] Franc과 Dollar 비교하기
 - [x] 통화 구현
-- [ ] testFrancMultiplication 제거
+- [x] testFrancMultiplication 제거
