@@ -85,4 +85,14 @@ public class TestClass {
         // 동일 화폐단위끼리는 환율이 1:1이다.
         assertEquals(1, new Bank().rate("USD", "USD"));
     }
+
+    @Test
+    public void testMixedAddition() {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Money result = bank.reduce(fiveBucks.plus(tenFrancs), "USD");
+        assertEquals(Money.dollar(10), result);
+    }
 }
