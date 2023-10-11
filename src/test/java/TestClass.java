@@ -1,5 +1,6 @@
-import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Arrays;
 
 import static org.junit.Assert.*;
 
@@ -64,4 +65,24 @@ public class TestClass {
         assertEquals(Money.dollar(1), result);
     }
 
+    @Test
+    public void testReduceMoneyDifferentCurrency() {
+        // 2프랑을 달러로 바꾸고 싶다. 비율은 1USD=2CHF
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Money result = bank.reduce(Money.franc(2), "USD");
+        assertEquals(Money.dollar(1), result);
+    }
+
+    @Test
+    public void testArrayEquals() {
+        assertEquals(new Object[] {"abc"}, new Object[] {"abc"}); // 책에서는 실패하는데 여기선 성공한다.
+        assertTrue(Arrays.equals(new Object[] {"abc"}, new Object[] {"abc"}));
+    }
+
+    @Test
+    public void testIdentityRate() {
+        // 동일 화폐단위끼리는 환율이 1:1이다.
+        assertEquals(1, new Bank().rate("USD", "USD"));
+    }
 }
