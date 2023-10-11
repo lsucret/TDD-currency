@@ -4,12 +4,12 @@
 테스트 목록
 - [x] $5 + 10CHF = $10(환율이 2 : 1일 경우) ->  환율 전환
   - [x] $5 + $5 = $10 -> 더하기의 작은 테스트
-  - [ ] $5 + $5 에서 Money 반환하기
+  - [x] ~~$5 + $5 에서 Money 반환하기~~ -> test failed.
   - [x] Bank.reduce(Money) -> 다형성 지원(Sum,Money) 테스트
   - [x] Money에 대한 통화 변환을 수행하는 Reduce
   - [x] reduce(Bank bank, String to) -> 환전 메서드
-  - [ ] Sum.plus 구현하기
-  - [ ] Expression.times 구현하기
+  - [x] Sum.plus 구현하기
+  - [x] Expression.times 구현하기
 - [x] 5 dollar * 2 = 10 dollar -> 갯수에 따른 금액 계산
 - [x] amount를 private으로 만들기
 - [x] Dollar의 부작용

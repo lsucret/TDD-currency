@@ -15,8 +15,8 @@ public class Money implements Expression {
         return new Money(amount, "CHF");
     }
 
-    Expression times(int multiplier){
-        return new Money(amount * multiplier,currency);
+    public Expression times(int multiplier) {
+        return new Money(amount * multiplier, currency);
     }
 
     String currency(){
